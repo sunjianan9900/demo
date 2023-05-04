@@ -31,8 +31,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -90,7 +88,6 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 100,
               width: 200,
               child: TextField(
-
                 inputFormatters: [
                   FilteringTextInputFormatter.allow(
                       RegExp("[a-zA-Z]|[\u4e00-\u9fa5]|[0-9]")),
@@ -100,7 +97,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-
     );
   }
 }
